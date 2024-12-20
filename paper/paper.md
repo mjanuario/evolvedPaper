@@ -131,10 +131,9 @@ functionalities as they see fit.
 
 To access a vignette, type `vignette("vignette_name")` 
 in R, replacing "`vignette_name`" with the vignette name (see **Table 2**). 
-The development version, as well as more details and instructions for 
+The development version, more detailed information on the package/vignettes, and instructions for 
 installing and using R/RStudio/RMarkdown are provided at 
-[https://github.com/mjanuario/evolved](https://github.com/mjanuario/evolved), 
-where the development version and . Questions should be sent to 
+[https://github.com/mjanuario/evolved](https://github.com/mjanuario/evolved). Questions should be sent to 
 MJ (correspondence author).
 
 # Acknowledgements
