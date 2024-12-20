@@ -1,20 +1,29 @@
-name: Build Paper
-
+name: Draft PDF
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    paths:
+      - paper.md
+      - paper.bib
+      - .github/workflows/draft-pdf.yml
 
 jobs:
-  build:
+  paper:
     runs-on: ubuntu-latest
-
+    name: Paper Draft
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Compile paper
-      uses: openjournals/joss-pdf@v1
-      with:
-        source: paper/paper.md
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build draft PDF
+        uses: openjournals/openjournals-draft-action@master
+        with:
+          journal: jose
+          # This should be the path to the paper within your repo.
+          paper-path: paper/paper.md
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper
+          # This is the output path where Pandoc will write the compiled
+          # PDF. Note, this should be the same directory as the input
+          # paper.md
+          path: paper.pdf
