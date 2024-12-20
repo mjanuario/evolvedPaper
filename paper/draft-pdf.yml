@@ -1,5 +1,4 @@
-name: Open Journals PDF Generator
-uses: openjournals/openjournals-draft-action@v.1.0
+name: Draft PDF
 on: [push]
 
 jobs:
