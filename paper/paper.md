@@ -48,21 +48,28 @@ bibliography: paper.bib
   analysis (e.g., `ape` - [@Paradis:2019]). 
 
   `evolved`'s functions can be loosely classified into "high level" and "low level"
-   (**Table 1**), thus providing tools for inquiries that assume different levels 
-   of student independence (e.g., as categorized by [@BanchiBell:2008] - see examples 
-   of inquiries commented under their nomenclature in **Table 2**). High-level functions 
-   execute complex sequences of operations while hiding many details, thus making 
-   minimal assumptions of R proficiency and allowing users to focus on results. 
-   They are either optimized for performance, or work as a simplified interface 
-   ("wrappers") of simulators from standard scientific packages (e.g., functions 
-   from packages `ape` [@Paradis:2019], `diversitree` [@Fitzjohn:2012], or 
-   `phytools` [@Revell:2024]). These functions will likely work better in inquiries 
-   with more student freedom and a greater focus on analyzing data (**Table 2**). In 
-   contrast, "low level" functions focus on making explicit connections between 
-   every sequential operation and are thus more easily applicable to structured 
-   inquiries [@BanchiBell:2008]. They are also internally designed to be readable 
-   by students with intermediate skills in R, allowing further engagement with 
-   simulation parameters and outcomes.
+  (**Table 1**), thus providing tools for inquiries that assume different levels 
+  of student independence (e.g., as categorized by [@BanchiBell:2008] - see examples 
+  of inquiries commented under their nomenclature in **Table 2**). High-level functions 
+  execute complex sequences of operations while hiding many details, thus making 
+  minimal assumptions of R proficiency and allowing users to focus on results. 
+  They are either optimized for performance, or work as a simplified interface 
+  ("wrappers") of simulators from standard scientific packages (e.g., functions 
+  from packages `ape` [@Paradis:2019], `diversitree` [@Fitzjohn:2012], or 
+  `phytools` [@Revell:2024]). These functions will likely work better in inquiries 
+  with more student freedom and a greater focus on analyzing data (**Table 2**). In 
+  contrast, "low level" functions focus on making explicit connections between 
+  every sequential operation and are thus more easily applicable to structured 
+  inquiries [@BanchiBell:2008]. They are also internally designed to be readable 
+  by students with intermediate skills in R, allowing further engagement with 
+  simulation parameters and outcomes.
+
+  The package is designed to reduce barriers to data- and simulation-driven inquiries 
+  and one vignette (`intro_R`) aims to introduce students/educators to R and its 
+  pedagogical capabilities. We do not provide answers to the investigation prompts 
+  in the vignettes, but educators can request answer keys from the corresponding 
+  author. This decision aims to delay the online availability of answers, 
+  extending the material's educational value.
 
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
 
@@ -77,13 +84,6 @@ bibliography: paper.bib
 | `simulateBirthDeath()` | Macroevolution                                    | Simulates the number of species following a birth-death model                                       | High           | `birthdeath_deeptime`    |
 | `SimulateTree()`       | Macroevolution                                    | Simulates a phylogenetic tree following a birth-death model                                         | High           | `birthdeath_phylogenies` |
 \normalsize
-
-The package is designed to reduce barriers to data- and simulation-driven inquiries 
-and one vignette (`intro_R`) aims to introduce students/educators to R and its 
-pedagogical capabilities. We do not provide answers to the investigation prompts 
-in the vignettes, but educators can request answer keys from the corresponding 
-author. This decision aims to delay the online availability of answers, 
-extending the material's educational value.
 
 **Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of `@BanchiBell:2008`.
 
