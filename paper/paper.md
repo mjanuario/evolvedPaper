@@ -32,10 +32,10 @@ bibliography: paper.bib
 # Summary
 
   `evolved` (**EVOL**utionary **V**irtual **ED**ucation) is an open-source R 
-  package `[@R:2024]` designed for graduate or advanced undergraduate courses in 
+  package [@R:2024] designed for graduate or advanced undergraduate courses in 
   evolutionary biology. It emphasizes tools for inquiry-based learning, where 
   students engage in scientific practices to actively build knowledge
-  `[@Pedaste:2015]`. The package includes vignettes (tutorials) to facilitate 
+  [@Pedaste:2015]. The package includes vignettes (tutorials) to facilitate 
   classroom investigations (**Tables 1** & **2**). However, educators are encouraged 
   to develop their own content modules depending on class context and/or learning 
   objectives. Most of evolved's core functions are oriented towards either (i) 
@@ -45,22 +45,22 @@ bibliography: paper.bib
   evolutionary biology (**Tables 1** & **2**).  Importantly, these datasets correspond 
   structurally (e.g., organization and data types) to real datasets used by 
   scientists, and they are compatible with widely-used software for evolutionary 
-  analysis (e.g., `ape` - `[@Paradis:2019]`). 
+  analysis (e.g., `ape` - [@Paradis:2019]). 
 
   `evolved`'s functions can be loosely classified into "high level" and "low level"
    (**Table 1**), thus providing tools for inquiries that assume different levels 
-   of student independence (e.g., as categorized by `[@BanchiBell:2008]` - see examples 
+   of student independence (e.g., as categorized by [@BanchiBell:2008] - see examples 
    of inquiries commented under their nomenclature in **Table 2**). High-level functions 
    execute complex sequences of operations while hiding many details, thus making 
    minimal assumptions of R proficiency and allowing users to focus on results. 
    They are either optimized for performance, or work as a simplified interface 
    ("wrappers") of simulators from standard scientific packages (e.g., functions 
-   from packages `ape` `[@Paradis:2019]`, `diversitree` `[@Fitzjohn:2012]`, or 
-   `phytools` `[@Revell:2024]`). These functions will likely work better in inquiries 
+   from packages `ape` [@Paradis:2019], `diversitree` [@Fitzjohn:2012], or 
+   `phytools` [@Revell:2024]). These functions will likely work better in inquiries 
    with more student freedom and a greater focus on analyzing data (**Table 2**). In 
    contrast, "low level" functions focus on making explicit connections between 
    every sequential operation and are thus more easily applicable to structured 
-   inquiries `[@BanchiBell:2008]`. They are also internally designed to be readable 
+   inquiries [@BanchiBell:2008]. They are also internally designed to be readable 
    by students with intermediate skills in R, allowing further engagement with 
    simulation parameters and outcomes.
 
@@ -87,7 +87,7 @@ extending the material's educational value.
 
 | Dataset name       | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Reference                      |   Version   | 
 |--------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
-| `data_whales`      | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | `[@Jones:2009; @Rabosky:2014]` |    Stable   |
+| `data_whales`      | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | [@Jones:2009; @Rabosky:2014] |    Stable   |
 | `whale_nbvlo`      | Cetacean molecular phylogeny                         | Structured inquiry       | Handling of phylogenies in analysis software               | `birthdeath_phylogenies`               | [@Steeman:2009]                |    Stable   |
 | `cvtOxidase`       | Metazoan (homologous) protein sequence               | Open inquiry             | Comparative analysis of molecular data                     | `deeptime_clocks`                      | [@Benson:2012]                 |    Stable   |
 | `birds_spp`        | Extant species list of birds                         | Structured inquiry       | Richness differences among clades                          | `deeptime_rocks`                       | [@Jetz:2012]                   |    Stable   |
