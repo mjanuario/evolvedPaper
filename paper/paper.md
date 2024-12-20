@@ -66,7 +66,7 @@ bibliography: paper.bib
 
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
 
-\small
+\tiny
 | Function name          | Associated subfield                               | Function purpose                                                                                    | Function Level | Vignette name            |
 |------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------|--------------------------|
 | `calcFossilDivTT()`    | Paleobiology                                      | Estimate diversity through time from fossil occurrences                                             | Low            | `deeptime_rocks`         |
@@ -87,7 +87,7 @@ extending the material's educational value.
 
 **Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of `@BanchiBell:2008`.
 
-\small
+\tiny
 | Dataset name       | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Reference                      |   Version   | 
 |--------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
 | `data_whales`      | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | [@Jones:2009; @Rabosky:2014] |    Stable   |
