@@ -66,6 +66,7 @@ bibliography: paper.bib
 
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
 
+\small
 | Function name          | Associated subfield                               | Function purpose                                                                                    | Function Level | Vignette name            |
 |------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------|--------------------------|
 | `calcFossilDivTT()`    | Paleobiology                                      | Estimate diversity through time from fossil occurrences                                             | Low            | `deeptime_rocks`         |
@@ -75,6 +76,7 @@ bibliography: paper.bib
 | `WEDriftSim()`         | Population genetics                               | Simulates allele frequency change through time under genetic drift                                  | Low            | `pongen_drift`           |
 | `simulateBirthDeath()` | Macroevolution                                    | Simulates the number of species following a birth-death model                                       | High           | `birthdeath_deeptime`    |
 | `SimulateTree()`       | Macroevolution                                    | Simulates a phylogenetic tree following a birth-death model                                         | High           | `birthdeath_phylogenies` |
+\normalsize
 
 The package is designed to reduce barriers to data- and simulation-driven inquiries 
 and one vignette (`intro_R`) aims to introduce students/educators to R and its 
@@ -85,6 +87,7 @@ extending the material's educational value.
 
 **Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of `@BanchiBell:2008`.
 
+\small
 | Dataset name       | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Reference                      |   Version   | 
 |--------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
 | `data_whales`      | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | [@Jones:2009; @Rabosky:2014] |    Stable   |
@@ -97,6 +100,7 @@ extending the material's educational value.
 | `dinos_fossil`     | Fossil occurrences of dinosaurs                      | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |    Stable   |
 | `trilob_fossil`    | Fossil occurrences of trilobites                     | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) | Development |
 | `timeseries_fossil`| Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
+\normalsize
 
 # Statement of need
 
