@@ -49,7 +49,7 @@ bibliography: paper.bib
 
   `evolved`'s functions can be loosely classified into "high level" and "low level"
   (**Table 1**), thus providing tools for inquiries that assume different levels 
-  of student independence (e.g., as categorized by [@BanchiBell:2008] - see examples 
+  of student independence (e.g., as categorized by @BanchiBell:2008 - see examples 
   of inquiries commented under their nomenclature in **Table 2**). High-level functions 
   execute complex sequences of operations while hiding many details, thus making 
   minimal assumptions of R proficiency and allowing users to focus on results. 
@@ -68,7 +68,7 @@ bibliography: paper.bib
   and one vignette (`intro_R`) aims to introduce students/educators to R and its 
   pedagogical capabilities. We do not provide answers to the investigation prompts 
   in the vignettes, but educators can request answer keys from the corresponding 
-  author. This decision aims to delay the online availability of answers, 
+  author (MJ). This decision aims to delay the online availability of answers, 
   extending the material's educational value.
 
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
@@ -85,21 +85,21 @@ bibliography: paper.bib
 | `SimulateTree()`       | Macroevolution                                    | Simulates a phylogenetic tree following a birth-death model                                         | High           | `birthdeath_phylogenies` |
 \normalsize
 
-**Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of @BanchiBell:2008. Legend: occs. = Occurrences; Ver. = Version of the package (stable = hosted in CRAN, Devel. = development version hosted in github).
+**Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of @BanchiBell:2008. Legend: occs. = Occurrences; Ver. = Version of the package (stable = hosted on CRAN, Devel. = development version hosted on github).
 
 \tiny
-| Dataset name        | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Data source                    |   Ver.      | 
-|---------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
-| `data_whales`       | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | [@Jones:2009; @Rabosky:2014]   |    Stable   |
-| `whale_nbvlo`       | Cetacean molecular phylogeny                         | Structured inquiry       | Handling of phylogenies in analysis software               | `birthdeath_phylogenies`               | [@Steeman:2009]                |    Stable   |
-| `cvtOxidase`        | Metazoan (homologous) protein sequence               | Open inquiry             | Comparative analysis of molecular data                     | `deeptime_clocks`                      | [@Benson:2012]                 |    Stable   |
-| `birds_spp`         | Extant species list of birds                         | Structured inquiry       | Richness differences among clades                          | `deeptime_rocks`                       | [@Jetz:2012]                   |    Stable   |
-| `mammals_spp`       | Extant species list of mammals                       | Structured inquiry       | Richness differences among clades                          | `deeptime_rocks`                       | [@Upham:2019]                  |   Devel.    |
-| `ammonoidea_fossil` | Ammonoid fossil occs.                                | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
-| `mammals_fossil`    | Mammal fossil occs.                                  | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
-| `dinos_fossil`      | Dinosaur fossil occs.                                | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |    Stable   |
-| `trilob_fossil`     | Trilobite fossil occs.                               | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
-| `timeseries_fossil` | Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
+| Dataset name         | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Data source                    |   Ver.      | 
+|----------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
+| `data_whales`        | Cetacean body size and speciation rates              | Structured inquiry       | Statistical non-independence among closely related species | `birthdeath_phylogenies`               | [@Jones:2009; @Rabosky:2014]   |    Stable   |
+| `whale_nbvlo`        | Cetacean molecular phylogeny                         | Structured inquiry       | Handling of phylogenies in analysis software               | `birthdeath_phylogenies`               | [@Steeman:2009]                |    Stable   |
+| `cvtOxidase`         | Metazoan (homologous) protein sequence               | Open inquiry             | Comparative analysis of molecular data                     | `deeptime_clocks`                      | [@Benson:2012]                 |    Stable   |
+| `birds_spp`          | Extant species list of birds                         | Structured inquiry       | Richness differences among clades                          | `deeptime_rocks`                       | [@Jetz:2012]                   |    Stable   |
+| `mammals_spp`        | Extant species list of mammals                       | Structured inquiry       | Richness differences among clades                          | `deeptime_rocks`                       | [@Upham:2019]                  |   Devel.    |
+| `ammonoidea_fossil`  | Ammonoid fossil occs.                                | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
+| `mammals_fossil`     | Mammal fossil occs.                                  | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
+| `dinos_fossil`       | Dinosaur fossil occs.                                | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |    Stable   |
+| `trilob_fossil`      | Trilobite fossil occs.                               | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
+| `timeseries_fossil`  | Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
 \normalsize
 
 # Statement of need
@@ -138,7 +138,7 @@ MJ (correspondence author).
 
 # Acknowledgements
 
-We thank Tristan Schramer, Yu Kai Tan, and Theodore Matel for their suggestions.
+We thank Theodore Matel, Tristan Schramer, and Yu Kai Tanfor their suggestions.
 
 # References
 
