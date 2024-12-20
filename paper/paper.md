@@ -72,6 +72,7 @@ bibliography: paper.bib
   extending the material's educational value.
 
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
+
 \tiny
 | Function name          | Associated subfield                               | Function purpose                                                                                    | Function Level | Vignette name            |
 |------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------|--------------------------|
@@ -84,7 +85,8 @@ bibliography: paper.bib
 | `SimulateTree()`       | Macroevolution                                    | Simulates a phylogenetic tree following a birth-death model                                         | High           | `birthdeath_phylogenies` |
 \normalsize
 
-**Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of @BanchiBell:2008. Legend: occs. = Occurrences; Ver. = Version of the package (wheather the stable version hosted in CRAN, or the development version hosted in github); Devel. = Development.
+**Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of @BanchiBell:2008. Legend: occs. = Occurrences; Ver. = Version of the package (stable = hosted in CRAN, Devel. = development version hosted in github).
+
 \tiny
 | Dataset name       | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Reference                      |   Ver.      | 
 |--------------------|------------------------------------------------------|--------------------------|------------------------------------------------------------|----------------------------------------|--------------------------------|-------------|
