@@ -9,11 +9,9 @@ authors:
   - name: Matheus Januario
     orcid: 0000-0002-6480-7095
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
-    note: "Equally contributing author"
   - name: Jennifer P. Auler
     orcid: 0000-0001-7576-9058
     affiliation: 3
-    note: "Equally contributing author"
   - name: Andressa L. Viol
     affiliation: "1, 2"
   - name: Daniel L. Rabosky
@@ -26,6 +24,7 @@ affiliations:
    index: 2
  - name: Programa de Pós-Graduação em Ecologia, Universidade de São Paulo, Rua do Matão, 321, Travessa 14, São Paulo, SP, Brazil
    index: 3
+equal_contribution: "Matheus Januario and Jennifer P. Auler contributed equally to the publication of the R package."
 date: 19 December 2024
 bibliography: paper.bib
 
@@ -138,6 +137,10 @@ bibliography: paper.bib
 | `trilob_fossil`          | Trilobite fossil occs.                               | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
 | `timeseries_fossil`      | Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
 \normalsize
+
+# Author contributions:
+
+MJ and DLR designed most of the code, internal functions, and educational components. JPA joined later, contributing to visualization functions, documentation, implementation improvements, and preparing the package for CRAN standards. MJ, DLR, and ALV developed the vignettes, based on EEB 516 labs. MJ wrote the first drafts of the paper, help pages, and vignettes, with all authors reviewing the material afterward.
 
 # Acknowledgements
 
