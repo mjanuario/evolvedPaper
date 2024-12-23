@@ -89,6 +89,21 @@ bibliography: paper.bib
   functions were consolidated into an R package to free up class time by simplifying 
   data loading, now made with a simple command: data(`dataset name`). 
 
+# Software installation and use
+
+  `evolved`'s stable version is [available on the Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/web/packages/evolved/index.html).
+  The available vignettes draw inspiration from the authors' teaching experiences, 
+  but they are not essential for the software to function and should be 
+  interpreted as suggestions. Instructors should feel free to adapt evolved's 
+  functionalities as they see fit. 
+
+  To access a vignette, type `vignette("vignette_name")` 
+  in R, replacing "`vignette_name`" with the vignette name (see **Table 2**). 
+  The development version, more detailed information on the package/vignettes, and instructions for 
+  installing and using R/RStudio/RMarkdown are provided at 
+  [https://github.com/mjanuario/evolved](https://github.com/mjanuario/evolved). Questions should be sent to 
+  MJ (correspondence author).
+
 \small
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
 \normalsize
@@ -123,21 +138,6 @@ bibliography: paper.bib
 | `trilob_fossil`          | Trilobite fossil occs.                               | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
 | `timeseries_fossil`      | Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
 \normalsize
-
-# Software installation and use
-
-`evolved`'s stable version is [available on the Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/web/packages/evolved/index.html).
-The available vignettes draw inspiration from the authors' teaching experiences, 
-but they are not essential for the software to function and should be 
-interpreted as suggestions. Instructors should feel free to adapt evolved's 
-functionalities as they see fit. 
-
-To access a vignette, type `vignette("vignette_name")` 
-in R, replacing "`vignette_name`" with the vignette name (see **Table 2**). 
-The development version, more detailed information on the package/vignettes, and instructions for 
-installing and using R/RStudio/RMarkdown are provided at 
-[https://github.com/mjanuario/evolved](https://github.com/mjanuario/evolved). Questions should be sent to 
-MJ (correspondence author).
 
 # Acknowledgements
 
