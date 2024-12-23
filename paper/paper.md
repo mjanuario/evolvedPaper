@@ -1,5 +1,5 @@
 ---
-title: 'evolved: open software for teaching Evolutionary biology at multiple scales through virtual inquiries'
+title: 'evolved: open software for teaching Evolutionary biology through virtual inquiries'
 tags:
   - R
   - Ecology
@@ -9,9 +9,11 @@ authors:
   - name: Matheus Januario
     orcid: 0000-0002-6480-7095
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
+    note: "Equally contributing author"
   - name: Jennifer P. Auler
     orcid: 0000-0001-7576-9058
     affiliation: 3
+    note: "Equally contributing author"
   - name: Andressa L. Viol
     affiliation: "1, 2"
   - name: Daniel L. Rabosky
@@ -33,7 +35,7 @@ bibliography: paper.bib
 
   `evolved` (**EVOL**utionary **V**irtual **ED**ucation) is an open-source R 
   package [@R:2024] designed for graduate or advanced undergraduate courses in 
-  evolutionary biology. It emphasizes tools for inquiry-based learning, where 
+  evolutionary biology. It provides tools for inquiry-based learning, where 
   students engage in scientific practices to actively build knowledge
   [@Pedaste:2015]. The package includes vignettes (tutorials) to facilitate 
   classroom investigations (**Tables 1** & **2**). However, educators are encouraged 
@@ -49,8 +51,7 @@ bibliography: paper.bib
 
   `evolved`'s functions can be loosely classified into "high level" and "low level"
   (**Table 1**), thus providing tools for inquiries that assume different levels 
-  of student independence (e.g., as categorized by @BanchiBell:2008 - see examples 
-  of inquiries commented under their nomenclature in **Table 2**). High-level functions 
+  of student independence (e.g., as categorized by @BanchiBell:2008 - see **Table 2**). High-level functions 
   execute complex sequences of operations while hiding many details, thus making 
   minimal assumptions of R proficiency and allowing users to focus on results. 
   They are either optimized for performance, or work as a simplified interface 
@@ -68,10 +69,29 @@ bibliography: paper.bib
   and one vignette (`intro_R`) aims to introduce students/educators to R and its 
   pedagogical capabilities. We do not provide answers to the investigation prompts 
   in the vignettes, but educators can request answer keys from the corresponding 
-  author (MJ). This decision aims to delay the online availability of answers, 
-  extending the material's educational value.
+  author (MJ). 
 
+# Statement of need
+
+  Evolutionary biology is a complex discipline that affords many opportunities for 
+  students to practice interrogating, analyzing, and discussing data, but advanced classes 
+  still need effective educational resources. `evolved` addresses this need by 
+  focusing on core evidence used to study evolution: molecular/fossil data, 
+  simulations, and sound mathematical principles in evolutionary biology. The 
+  package helps teach programming, analytical, and reasoning skills through 
+  interactive, hands-on activities, and its open-source design allows direct 
+  engagement with algorithms and methods.
+
+  `evolved` began in 2022 as a set of standalone functions used in an advanced evolutionary 
+  biology course at the University of Michigan, originally designed for use in 
+  hands-on classes of 2 hours per topic module. However, valuable class time was lost on 
+  data setup and formatting, reducing student engagement with core material. In 2023, the 
+  functions were consolidated into an R package to free up class time by simplifying 
+  data loading, now made with a simple command: data(`dataset name`). 
+
+\small
 **Table 1.** Selected functions illustrating the range of topics covered, with notes on their level (low = intended to be opened by students, high = wrapper function). A full list and descriptions of all functions, including helper and plotting functions, are available in the package manual [@Januario:2024]. 
+\normalsize
 
 \tiny
 | Function name          | Associated subfield                               | Function purpose                                                                                    | Function Level | Vignette name            |
@@ -85,7 +105,9 @@ bibliography: paper.bib
 | `SimulateTree()`       | Macroevolution                                    | Simulates a phylogenetic tree following a birth-death model                                         | High           | `birthdeath_phylogenies` |
 \normalsize
 
+\small
 **Table 2.** Different datasets and their suggested applications. The inquiry level follows the terminology and definitions of @BanchiBell:2008. Legend: occs. = Occurrences; Ver. = Version of the package (stable = hosted on CRAN, Devel. = development version hosted on github).
+\normalsize
 
 \tiny
 | Dataset name             | Short description                                    | Suggested inquiry level  | Possible topic in inquiry                                  | Name of vignette with example activity | Data source                    |   Ver.      | 
@@ -101,25 +123,6 @@ bibliography: paper.bib
 | `trilob_fossil`          | Trilobite fossil occs.                               | Open inquiry             | Large-scale biodiversity patterns in the fossil record     | `deeptime_rocks`                       | [https://paleobiodb.org](https://paleobiodb.org) |   Devel.    |
 | `timeseries_fossil`      | Timeseries of fossil species numbers for many clades | Guided inquiry           | Large-scale biodiversity patterns in the fossil record     | `birthdeath_deeptime`                  | [@Rabosky:2021] |    Stable   |
 \normalsize
-
-# Statement of need
-
-Evolutionary biology's complexity creates many opportunities for students to 
-practice interrogating, analyzing, and discussing data, but advanced classes 
-still need effective educational resources. `evolved` addresses this need by 
-focusing on core evidence used to study evolution: molecular/fossil data, 
-simulations, and sound mathematical principles in evolutionary biology. The 
-package helps teach programming, analytical, and argumentation skills through 
-interactive, hands-on activities, and its open-source design allows direct 
-engagement with algorithms and methods.
-
-`evolved` began in 2022 as standalone functions used in an advanced evolutionary 
-biology course at the University of Michigan, originally designed for use in 
-hands-on classes of 2 hours per topic module. However, valuable class time 
-was lost on data setup and formatting, constraining student exploration. In 
-2023, the functions were consolidated into an R package to free up class 
-time by simplifying data loading, now made with a simple 
-command: data(`dataset name`). 
 
 # Software installation and use
 
