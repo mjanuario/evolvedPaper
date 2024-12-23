@@ -139,7 +139,7 @@ bibliography: paper.bib
 
 # Author contributions:
 
-MJ and DLR designed most of the code, internal functions, and educational components. JPA joined later, contributing to visualization functions, documentation, implementation improvements, and preparing the package for CRAN standards. MJ, DLR, and ALV developed the vignettes, based on EEB 516 labs. MJ wrote the first drafts of the paper, help pages, and vignettes, with all authors reviewing the material afterward.
+MJ and DLR designed most of the code, internal functions, and educational components. JPA joined later, contributing to visualization functions, documentation, implementation improvements, and preparing the package for CRAN standards. MJ, DLR, and ALV developed the vignettes. MJ wrote the first drafts of the paper, help pages, and vignettes, with all authors reviewing the material afterward.
 
 # Acknowledgements
 
