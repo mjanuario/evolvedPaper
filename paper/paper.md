@@ -24,7 +24,6 @@ affiliations:
    index: 2
  - name: Programa de Pós-Graduação em Ecologia, Universidade de São Paulo, Rua do Matão, 321, Travessa 14, São Paulo, SP, Brazil
    index: 3
-equal_contribution: "Matheus Januario and Jennifer P. Auler contributed equally to the publication of the R package."
 date: 19 December 2024
 bibliography: paper.bib
 
